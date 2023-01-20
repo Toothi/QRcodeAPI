@@ -2,8 +2,14 @@
 Web application interface for generating QR code
 ## Usage:
 ```text
-http://localhost:8080/qrcode?url=http://google.com
-http://localhost:8080/images/qrcode.png
+http://0.0.0.0:8080/qrcode?url=http://google.com
+http://0.0.0.0:8080/images/qrcode.png
+```
+## Docker
+```text
+git clone https://github.com/Toothi/QRcodeAPI
+cd QRcodeAPI
+docker build -t qrcode .
 ```
 ## Server
 ### Linux
