@@ -24,5 +24,5 @@ func Request_URL(a http.ResponseWriter, b *http.Request) {
 	*/
 	log.Printf("[请求生成]: %s", Geturl)
 	tools.Generate_QRcode(Geturl)
-	fmt.Fprintf(a, `{"status":%d,GetUrl":"%s","DownloadUrl":"http://0.0.0.0:8080/images/qrcode.png"}`, http.StatusOK, Geturl)
+	fmt.Fprintf(a, `{"status":%d,GetUrl":"%s","DownloadPath":"/images/qrcode.png"}`, http.StatusOK, Geturl)
 }
