@@ -10,6 +10,7 @@ http://0.0.0.0:8080/images/qrcode.png
 git clone https://github.com/Toothi/QRcodeAPI
 cd QRcodeAPI
 docker build -t qrcode .
+docker run -d -P --name qrcode-api qrcode
 ```
 ## Server
 ### Linux
