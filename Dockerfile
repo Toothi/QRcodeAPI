@@ -6,4 +6,4 @@ COPY go.sum .
 RUN go mod tidy
 COPY . .
 EXPOSE 8080
-ENTRYPOINT ["go","run","/opt/QRcode-API/main.go"]
+ENTRYPOINT ["go","run","/opt/QRcode-API/main.go",">","log.txt","2>1&","&"]
