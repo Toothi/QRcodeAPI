@@ -3,7 +3,7 @@ Web application interface for generating QR code
 ## Usage:
 ```text
 http://0.0.0.0:8080/qrcode?url=http://google.com
-http://0.0.0.0:8080/images/qrcode.png
+http://0.0.0.0:8080/images/google.com.png
 ```
 ## Docker
 ```text
