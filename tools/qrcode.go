@@ -15,8 +15,7 @@ func Checks(a string) string {
 		rename := string(a[8:])
 		return rename
 	} else {
-		cuo := "ERROR"
-		return cuo
+		return "ERROR"
 	}
 }
 
