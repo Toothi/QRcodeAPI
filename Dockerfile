@@ -7,5 +7,4 @@ COPY go.sum .
 RUN go mod tidy
 COPY . .
 EXPOSE 8080
-ENTRYPOINT [$workpath"/start.sh"]
-#ENTRYPOINT ["go","run","/opt/QRcode-API/main.go",">","log.txt","2>1&","&"]
+ENTRYPOINT ["go","run","main.go"]
