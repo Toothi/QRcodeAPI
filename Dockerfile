@@ -1,9 +1,11 @@
 FROM golang:alpine
 
-WORKDIR /opt/QRcode-API
+ENV workpath /opt/QRcode-API
+WORKDIR $workpath
 COPY go.mod .
 COPY go.sum .
 RUN go mod tidy
 COPY . .
 EXPOSE 8080
-ENTRYPOINT ["go","run","/opt/QRcode-API/main.go",">","log.txt","2>1&","&"]
+ENTRYPOINT [$workpath"/start.sh"]
+#ENTRYPOINT ["go","run","/opt/QRcode-API/main.go",">","log.txt","2>1&","&"]
